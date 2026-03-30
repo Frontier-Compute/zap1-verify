@@ -1,5 +1,7 @@
 # zap1-verify
 
+[![ci](https://github.com/Frontier-Compute/zap1-verify/actions/workflows/ci.yml/badge.svg)](https://github.com/Frontier-Compute/zap1-verify/actions/workflows/ci.yml)
+
 Standalone ZAP1 Merkle proof verifier for Zcash. Rust + WASM.
 
 ## Purpose
