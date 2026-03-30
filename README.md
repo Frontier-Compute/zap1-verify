@@ -1,16 +1,16 @@
-# nsm1-verify
+# zap1-verify
 
-Standalone NSM1 Merkle proof verifier for Zcash. Rust + WASM.
+Standalone ZAP1 Merkle proof verifier for Zcash. Rust + WASM.
 
 ## Purpose
 
-`nsm1-verify` verifies NSM1 structured memo and Merkle proof data
-independent of the server runtime. Used by Nordic Shield and the NSM1
+`zap1-verify` verifies ZAP1 structured memo and Merkle proof data
+independent of the server runtime. Used by Nordic Shield and the ZAP1
 reference implementation.
 
 It provides:
 
-- NSM1 leaf hashing via `compute_leaf_hash`
+- ZAP1 leaf hashing via `compute_leaf_hash`
 - Merkle internal node hashing via `node_hash`
 - full inclusion proof verification via `verify_proof`
 - hex helpers via `hex_to_bytes32` and `bytes_to_hex`
@@ -18,14 +18,14 @@ It provides:
 
 Reference spec and vectors:
 
-- [`ONCHAIN_PROTOCOL.md`](https://github.com/Frontier-Compute/nsm1/blob/main/ONCHAIN_PROTOCOL.md)
-- [`TEST_VECTORS.md`](https://github.com/Frontier-Compute/nsm1/blob/main/TEST_VECTORS.md)
+- [`ONCHAIN_PROTOCOL.md`](https://github.com/Frontier-Compute/zap1/blob/main/ONCHAIN_PROTOCOL.md)
+- [`TEST_VECTORS.md`](https://github.com/Frontier-Compute/zap1/blob/main/TEST_VECTORS.md)
 
 ## Install
 
 ```toml
 [dependencies]
-nsm1-verify = "0.2"
+zap1-verify = "0.2"
 ```
 
 ## API
@@ -51,7 +51,7 @@ Primary types:
 Example:
 
 ```rust
-use nsm1_verify::{bytes_to_hex, compute_leaf_hash, EventPayload};
+use zap1_verify::{bytes_to_hex, compute_leaf_hash, EventPayload};
 
 let leaf = compute_leaf_hash(&EventPayload::ProgramEntry {
     wallet_hash: b"wallet_abc",
@@ -80,7 +80,7 @@ Current test status: `22 passed`.
 
 The test suite covers:
 
-- all 9 deployed NSM1 event types
+- all 9 deployed ZAP1 event types
 - hex conversion helpers
 - Merkle root derivation
 - end-to-end proof verification against published vectors

@@ -1,8 +1,8 @@
 [package]
-name = "nsm1-verify-wasm"
+name = "zap1-verify-wasm"
 version = "0.2.0"
 edition = "2021"
-description = "WASM bindings for nsm1-verify - in-browser Merkle proof verification"
+description = "WASM bindings for zap1-verify - in-browser Merkle proof verification"
 license = "MIT"
 authors = ["zk_nd3r <zk_nd3r@frontiercompute.io>"]
 
@@ -10,7 +10,7 @@ authors = ["zk_nd3r <zk_nd3r@frontiercompute.io>"]
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-nsm1-verify = { path = ".." }
+zap1-verify = { path = ".." }
 wasm-bindgen = "0.2"
 serde = { version = "1", features = ["derive"] }
 serde-wasm-bindgen = "0.6"

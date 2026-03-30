@@ -54,17 +54,17 @@ dependencies = [
 ]
 
 [[package]]
-name = "nsm1-verify"
+name = "zap1-verify"
 version = "0.1.0"
 dependencies = [
  "blake2b_simd",
 ]
 
 [[package]]
-name = "nsm1-verify-wasm"
+name = "zap1-verify-wasm"
 version = "0.1.0"
 dependencies = [
- "nsm1-verify",
+ "zap1-verify",
  "serde",
  "serde-wasm-bindgen",
  "wasm-bindgen",

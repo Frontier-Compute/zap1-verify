@@ -1,6 +1,6 @@
-//! nsm1-verify-wasm - WASM bindings for in-browser NSM1 Merkle proof verification.
+//! zap1-verify-wasm - WASM bindings for in-browser ZAP1 Merkle proof verification.
 
-use nsm1_verify::{
+use zap1_verify::{
     self, bytes_to_hex, compute_leaf_hash, hex_to_bytes32, node_hash, verify_proof,
     EventPayload, ProofStep, SiblingPosition,
 };
