@@ -54,23 +54,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "zap1-verify"
-version = "0.1.0"
-dependencies = [
- "blake2b_simd",
-]
-
-[[package]]
-name = "zap1-verify-wasm"
-version = "0.1.0"
-dependencies = [
- "zap1-verify",
- "serde",
- "serde-wasm-bindgen",
- "wasm-bindgen",
-]
-
-[[package]]
 name = "once_cell"
 version = "1.21.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -201,4 +184,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a93e946af942b58934c604527337bad9ae33ba1d5c6900bbb41c2c07c2364a93"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "zap1-verify"
+version = "0.2.0"
+dependencies = [
+ "blake2b_simd",
+]
+
+[[package]]
+name = "zap1-verify-wasm"
+version = "0.2.0"
+dependencies = [
+ "serde",
+ "serde-wasm-bindgen",
+ "wasm-bindgen",
+ "zap1-verify",
 ]
