@@ -82,7 +82,7 @@ Current test status: `22 passed`.
 
 The test suite covers:
 
-- all 9 deployed ZAP1 event types
+- all 15 ZAP1 event types
 - hex conversion helpers
 - Merkle root derivation
 - end-to-end proof verification against published vectors
